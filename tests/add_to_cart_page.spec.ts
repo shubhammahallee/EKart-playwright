@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { test ,expect} from '@playwright/test';
 
 test('Add to Cart test', async ({ page }) => {
 
@@ -49,7 +49,15 @@ test('Add to Cart test', async ({ page }) => {
 
     await page.locator("//strong[normalize-space()='Checkout']").click();
 
-    await page.getByRole('button', {name:'Checkout'}).click();
+    await page.getByRole('link', { name: 'Qafox.com' }).click();
+
+    await page.getByAltText('Apple Cinema 30"').click();
+
+    await expect(
+    page.getByRole('heading', { name: 'Apple Cinema 30"' })
+).toBeVisible();
+
+    //await page.getByRole('button', {name:'Checkout'}).click();
 
 
     // 7. Screenshot
