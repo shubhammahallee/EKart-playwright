@@ -1,7 +1,7 @@
 import { test ,expect} from '@playwright/test';
 
 test('Add to Cart test', async ({ page }) => {
-
+ 
     // 1. Login
     await page.goto(
         'https://tutorialsninja.com/demo/index.php?route=account/login'
