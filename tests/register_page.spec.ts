@@ -1,4 +1,4 @@
-import { test } from '@playwright/test';
+import { test } from '@playwright/test'; 
 
 test('Register Account', async ({ page }) => {
 
