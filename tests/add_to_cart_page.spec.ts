@@ -10,7 +10,7 @@ test('Add to Cart test', async ({ page }) => {
     await page.getByLabel('E-Mail Address').fill('asustuf3005@gmail.com');
     await page.getByLabel('Password').fill('Password');
 
-    await page.getByRole('button', {
+    await page.getByRole('button', { 
         name: 'Login'
     }).click();
 
