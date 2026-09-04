@@ -14,3 +14,4 @@ test('home page test', async ({ page }) => {
     await page.screenshot({ path: "./screenshots/screenshot_home.png" });    
 
 });
+ 
