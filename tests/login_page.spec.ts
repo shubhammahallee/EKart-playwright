@@ -6,5 +6,5 @@ test('Login test',async({page})=>{
     await page.getByLabel('Password').fill('Password');
     await page.getByRole('button',{name:'Login'}).click();
     await page.screenshot({ path: "./screenshots/screenshot_login.png" });
-
+ 
 });
